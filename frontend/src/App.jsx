@@ -1,11 +1,9 @@
 
-
-
 function App() {
 
   return (
     <>
-      <div>
+      <div className="bg-red-500">
         <h1>Netflix GPT</h1>
       </div>
     </>
