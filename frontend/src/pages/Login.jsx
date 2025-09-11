@@ -28,18 +28,24 @@ const Login = () => {
             {isSignInForm ? "Sign In" : "Sign Up"}
           </h1>
 
+           {!isSignInForm && (
+            <input
+            type="text"
+            placeholder="Full Name"
+            className="w-full p-3 mb-6 bg-neutral-800 rounded text-white placeholder-gray-400 focus:outline-none"
+          />
+          )}
           <input
             type="text"
             placeholder="Email or phone number"
             className="w-full p-3 mb-4 bg-neutral-800 rounded text-white placeholder-gray-400 focus:outline-none"
           />
-
+         
           <input
             type="password"
             placeholder="Password"
             className="w-full p-3 mb-6 bg-neutral-800 rounded text-white placeholder-gray-400 focus:outline-none"
           />
-
           <button
             type="submit"
             className="w-full bg-red-600 hover:bg-red-700 transition-colors duration-200 p-3 rounded font-semibold"
